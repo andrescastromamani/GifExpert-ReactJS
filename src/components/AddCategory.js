@@ -1,13 +1,17 @@
 import React, { useState } from 'react'
+import PropTypes from 'prop-types';
 
-export const AddCategory = () => {
-    const [inputValue, setInputValue] = useState('Hola Mundo');
+export const AddCategory = ({ setCategories }) => {
+    const [inputValue, setInputValue] = useState('');
     const handleAddCategory = (e) => {
         setInputValue(e.target.value);
     }
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(inputValue);
+        if (inputValue.trim().length > 2) {
+            setCategories(cats => [...cats, inputValue])
+            setInputValue('');
+        }
     }
     return (
         <form onSubmit={handleSubmit}>
@@ -17,4 +21,7 @@ export const AddCategory = () => {
                 onChange={handleAddCategory} />
         </form>
     )
+}
+AddCategory.protTypes = {
+    setCategories: PropTypes.func.isRequired
 }
