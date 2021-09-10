@@ -4,10 +4,6 @@ import { GifGrid } from './components/GifGrid';
 
 export const GifExpertApp = () => {
     const [categories, setcategories] = useState(['music'])
-    const handleAdd = () => {
-        //setcategories([...categories, 'new category']);
-        setcategories(cats => [...cats, 'new category']);
-    }
     return (
         <>
             <h1>GifExpertApp</h1>
