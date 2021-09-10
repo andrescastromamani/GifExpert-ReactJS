@@ -3,7 +3,7 @@ import { AddCategory } from './components/AddCategory';
 import { GifGrid } from './components/GifGrid';
 
 export const GifExpertApp = () => {
-    const [categories, setcategories] = useState(['anime'])
+    const [categories, setcategories] = useState(['music'])
     const handleAdd = () => {
         //setcategories([...categories, 'new category']);
         setcategories(cats => [...cats, 'new category']);
