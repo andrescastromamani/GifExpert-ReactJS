@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
 import { AddCategory } from './components/AddCategory';
 import { GifGrid } from './components/GifGrid';
-import PropTypes from 'prop-types';
 
-export const GifExpertApp = ({ categoriesGifs = [] }) => {
+export const GifExpertApp = ({ categoriesGifs = ['music'] }) => {
     const [categories, setcategories] = useState(categoriesGifs);
     return (
         <>
@@ -23,6 +22,7 @@ export const GifExpertApp = ({ categoriesGifs = [] }) => {
         </>
     )
 }
+/*
 GifExpertApp.propTypes = {
     categoriesGifs: PropTypes.array.isRequired
-}
+}*/
