@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GifGrid should render a function 1`] = `
+<Fragment>
+  <h3>
+    music
+  </h3>
+  <p
+    className="animate__backInDown"
+  >
+    Loading...
+  </p>
+  <div
+    className="card-grid"
+  />
+</Fragment>
+`;
