@@ -3,7 +3,7 @@ import { AddCategory } from './components/AddCategory';
 import { GifGrid } from './components/GifGrid';
 
 export const GifExpertApp = () => {
-    const [categories, setcategories] = useState(['music'])
+    const [categories, setcategories] = useState(['react js'])
     return (
         <>
             <h1>GifExpertApp</h1>
